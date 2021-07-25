@@ -2,7 +2,7 @@ function  [A,x_gt]=gen_data_synthetic(num_inlier,num_outlier,noise_level)
 
 noise_bais=noise_level*randn(3,num_inlier+num_outlier);
 
-x_=rand(3,1)*2;
+x_=rand(3,1)*2-1;
 x_gt=x_./norm(x_);
 
 y=null(x_gt');
